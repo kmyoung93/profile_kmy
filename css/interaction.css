@@ -1,0 +1,35 @@
+.ltr{
+    transform: translateX(-40px);
+    transition: all 1s ease 0s;
+    opacity: 0;
+}
+
+.ltr.on{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.rtl{
+    transform: translateX(40px);
+    transition: all 1s ease 0s;
+    opacity: 0;
+}
+
+.rtl.on{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.fltr{
+    overflow: hidden;
+}
+
+.fltr img{
+    width: 100%;
+    transition: all 1s ease 0s;
+    transform: translateX(-100%);
+}
+
+.fltr.on img{
+    transform: translateX(0);
+}

@@ -1,0 +1,19 @@
+@media (max-width:1024px){
+    .hero{
+        width: 100%;
+        height: 1024px;
+    }
+
+    .aboutMe-desc{
+        flex: 1;
+    }
+
+    figure {
+        margin-top: 231px;
+        width: 387px;
+        height: 492px;
+        overflow: hidden;
+        flex: 1;
+    }
+
+}
