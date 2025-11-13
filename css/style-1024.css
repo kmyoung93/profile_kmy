@@ -4,16 +4,30 @@
         height: 1024px;
     }
 
-    .aboutMe-desc{
+    .non-tab{
+        display: none;
+    }
+
+    .only-tab{
+        display: block;
+        text-align: center;
+    }
+
+    .aboutMe{
+        display: grid;
+        grid-template-columns: 8fr 4fr;
+
+    }
+
+    .aboutMe figure {
+        width: auto;
+        height: auto;
+        overflow: hidden;
         flex: 1;
     }
 
-    figure {
-        margin-top: 231px;
-        width: 387px;
-        height: 492px;
-        overflow: hidden;
-        flex: 1;
+    .only-tab{
+        grid-column: 1/3;
     }
 
 }

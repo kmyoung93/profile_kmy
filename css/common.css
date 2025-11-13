@@ -69,6 +69,11 @@ html{
     margin: 0 3rem;
 }
 
+em{
+    font-style: inherit;
+    color: #90A0EE;
+}
+
 @media (max-width:1024px){
     html{
         font-size: var(--basic-font-tab);
