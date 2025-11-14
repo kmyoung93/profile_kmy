@@ -1,9 +1,4 @@
-@media (min-width: 1920px){
-    body{
-        max-width: 1920px;
-        margin: 0 auto;
-    }
-}
+
 
 :root{
     /* basic size 1rem */
@@ -26,17 +21,14 @@
     --lnh150: 1.5;
 }
 
-@media (min-width:1920px){
-    main{
-        width: 1920px;
-        margin: 0 auto;
+ p{
+        line-height: var(--lnh150);
     }
-}
 
 .pf {
-  font-family: "Italiana", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+font-family: "Italiana", sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 
 h1{
@@ -64,14 +56,44 @@ html{
     font-family: 'Pretendard', sans-serif;
 }
 
-.common-frame{
-    width: auto;
-    margin: 0 3rem;
-}
+
 
 em{
     font-style: inherit;
     color: #90A0EE;
+}
+
+.bold{
+    font-weight: var(--weight1);
+}
+
+.title-btn {
+    border: 1px solid var(--main-color);
+    width: 284px;
+    border-radius: 20px;
+    background-color: var(--main-color);
+    color: #1e1e1e;
+    margin: 3rem auto 1rem;
+    padding: .5rem 0;
+    text-align: center;
+}
+
+
+@media (min-width: 2000px){
+    .common-frame{
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+    html{
+        font-size:24px;
+    }
+}
+
+@media (max-width:1999px){
+    .common-frame{
+        width: auto;
+        margin: 0 3rem;
+    }
 }
 
 @media (max-width:1024px){
@@ -92,4 +114,9 @@ em{
         width: auto;
         margin: 0 1rem;
     }
+
+    .title-btn {
+        width: 180px;
+    }
+    
 }

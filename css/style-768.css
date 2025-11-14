@@ -4,6 +4,24 @@
         height: 800px;
     }
 
+    .non-tab{
+        display: block;
+        text-align: center;
+    }
+
+    .only-tab{
+        display: none;
+    }
+
+    .subtitle {
+        margin-top: 3rem;
+        font-size: 4.5vw;
+    }
+
+    .title{
+        font-size: 20vw;
+    }
+
     .aboutMe {
         display: flex;
         flex-direction: column;
@@ -12,19 +30,49 @@
         text-align: center;
     }
 
-    .title{
-        margin-bottom: 3rem;
+    .title {
+        margin-top: 0;
+    }
+
+    .aboutMe-dl {
+        margin-top: 4.5rem;
+        margin-bottom: 3.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: .5rem;
+        text-align: left;
     }
 
     figure{
         width: 100%;
         margin-top: 1rem;
     }
+
+    .skill-grid{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(50px, 1fr));
+        gap: 1rem;
+        text-align: left;
+    }
+    
+    .exp-wrap{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(50px, 1fr));
+        gap: 1rem;
+    }
+
+    .exp-list li {
+        grid-template-columns: 80px 1fr;
+    }
 }
 
 @media (max-width: 400px){
     .mo{
         display: block;
+    }
+
+    .hero-title {
+        font-size: 12.8vw;
     }
 }
 

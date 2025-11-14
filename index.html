@@ -25,6 +25,10 @@
     <!-- <script src="./js/bbyong.js"></script>
     <link rel="stylesheet" href="./css/interaction.css">
     <script src="./js/observer.js"></script> -->
+
+    <!-- swiper.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header></header>
@@ -41,7 +45,7 @@
         </div>
         
         <div class="common-frame aboutMe">
-            <div class="aboutMe-desc ltr">
+            <div class="aboutMe-title">
                 <div class="non-tab">
                     <p>기본을 지키며 완성도를 쌓아가는 웹퍼블리셔, 김민영입니다.</p>
                     <h2 class="pf subtitle">Consistency Builds</h2>
@@ -51,7 +55,9 @@
                     <p>기본을 지키며 완성도를 쌓아가는 웹퍼블리셔, 김민영입니다.</p>
                     <h2 class="pf">Consistency Builds Quality</h2>
                 </div>
-                <h4>디테일로 신뢰를 쌓는 퍼블리셔</h4>
+            </div>
+            <div class="aboutMe-desc ltr">
+                <h2>디테일로 신뢰를 쌓는 퍼블리셔</h2>
                 <div class="amContent">
                     <p>작은 코드 하나에도 이유를 담는 것을 좋아합니다.<br>
                         HTML과 CSS의 구조를 이해하고, <br class="mo"> 접근성을 고려한 마크업을 기본으로 삼습니다.<br>
@@ -65,6 +71,8 @@
                         <dd>김민영</dd>
                         <dt>birth</dt>
                         <dd>1993.05.18</dd>
+                        <dt>mbti</dt>
+                        <dd>ESTP</dd>
                         <dt>character</dt>
                         <dd>쾌활함 세심함 상냥함 성실함</dd>
                         <dt>address</dt>
@@ -78,14 +86,15 @@
         </div>
 
         <div class="myExp">
-            <h1><em>경험</em>을 통해 팀의 <em>성장</em>을 돕는 퍼블리셔</h1>
+            <h1 class="pf exp-title">About Me</h1>
+            <p>경험을 통해 팀의 성장을 돕는 <br class="mo">퍼블리셔</p>
             <div class="common-frame exp-wrap">
                 <section class="education">
-                    <h2><em>Education</em></h2>
+                    <h2 class="pf">Education</h2>
                     <ul class="exp-list">
                         <li>
                             <span class="date">2025.12.11.</span>
-                            <span class="description">UI/UX 디자인 및 개발 실무 프로젝트 과정 수료</span>
+                            <span class="description bold">UI/UX 디자인 및 개발 실무 프로젝트 과정 수료</span>
                         </li>
                         <li>
                             <span class="date">2014.02.</span>
@@ -98,19 +107,19 @@
                     </ul>
                 </section>
                 <section class="certi">
-                    <h2><em>Certifications</em></h2>
+                    <h2 class="pf">Certifications</h2>
                     <ul class="exp-list">
                         <li>
                             <span class="date">2025.12.</span>
-                            <span class="certi-list">웹디자인개발기능사(실기준비중) - 한국산업인력공단</span>
+                            <span class="certi-list"><span class="bold">웹디자인개발기능사(실기준비중)</span> - 한국산업인력공단</span>
                         </li>
                         <li>
                             <span class="date">2025.10.</span>
-                            <span class="certi-list">GTQ(그래픽기술자격) 1급 - 한국생산성본부</span>
+                            <span class="certi-list"><span class="bold">GTQ(그래픽기술자격) 1급</span> - 한국생산성본부</span>
                         </li>
                         <li>
                             <span class="date">2025.09.</span>
-                            <span class="certi-list">GTQI(그래픽기술자격) 1급 - 한국생산성본부</span>
+                            <span class="certi-list"><span class="bold">GTQI(그래픽기술자격) 1급</span> - 한국생산성본부</span>
                         </li>
                         <li>
                             <span class="date">2023.01.</span>
@@ -127,9 +136,9 @@
                     </ul>
                 </section>
                 <section class="exper">
-                    <h2><em>Experience</em></h2>
+                    <h2 class="pf">Experience</h2>
                     <h4>Early Childhood Educator</h4>
-                    <ul class="exp-list">
+                    <ul class="exp-list-last">
                         <li>만0~5세 유아 일상생활 지도 및 놀이, 교육활동 운영</li>
                         <li>연령별 교육 계획 수립 및 교육 평가 작성</li>
                         <li>영유아 개별 관찰 및 발달평가, 보호자 상담 진행 </li>
@@ -140,6 +149,153 @@
                 </section>
             </div>
         </div>
+
+        <div class="skill">
+            <div class="common-frame">
+                <h3 class="pf skill-title title-btn">Skills & Language</h3>
+                <p>기본기를 바탕으로 꾸준히 성장하며 신뢰할 수 있는 퍼블리셔를 목표로 하고 있습니다.<br>체계적인 학습과 실무 중심의 자격 취득을 통해 웹 퍼블리싱의 기초 역량을 탄탄하게 다졌으며, 새로운 환경에서도 빠르게 적응하고 책임감 있게 업무를 수행합니다.</p>
+                <ul class="skill-grid">
+                    <li>
+                        <h4>HTML</h4>
+                        <p>HTML을 통해 웹페이지의 기본 구조를 만들 수 있습니다.
+                            콘텐츠를 논리적으로 구분하고 의미를 부여해 접근성 높은 페이지를 설계할 수 있습니다.
+                            디자인 시안을 실제 웹 화면으로 구현하는 기초가 됩니다.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>CSS</h4>
+                        <p>CSS를 통해 웹페이지의 시각적 스타일을 자유롭게 표현할 수 있습니다.
+                            색상, 폰트, 레이아웃을 조정해 디자인 의도를 정확히 전달할 수 있습니다.
+                            다양한 디바이스에 맞춘 반응형 웹 디자인을 구현할 수 있습니다.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>JavaScript</h4>
+                        <p>JavaScript를 통해 웹페이지에 생동감 있는 인터랙션을 추가할 수 있습니다.
+                            버튼 클릭, 스크롤, 애니메이션 등 사용자와 상호작용하는 기능을 구현할 수 있습니다.
+                            이를 통해 사용자의 경험을 더욱 풍부하게 만들 수 있습니다.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>jQuery</h4>
+                        <p>jQuery를 통해 복잡한 JavaScript 기능을 간단하게 구현할 수 있습니다.
+                            DOM 조작, 애니메이션, 이벤트 제어를 손쉽게 다룰 수 있습니다.
+                            효율적으로 동적인 웹 페이지를 제작할 수 있습니다.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Figma</h4>
+                        <p>Figma를 통해 웹과 모바일 인터페이스를 시각적으로 설계할 수 있습니다.
+                            컴포넌트와 프로토타입 기능을 활용해 사용자 흐름을 쉽게 확인할 수 있습니다.
+                            디자이너와 개발자 간의 협업을 효율적으로 진행할 수 있습니다.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Illustrator</h4>
+                        <p>Illustrator를 통해 로고, 아이콘, 인포그래픽 등 다양한 벡터 디자인을 제작할 수 있습니다.
+                            정확한 도형과 선을 활용해 깔끔한 그래픽 작업이 가능합니다.
+                            브랜드 아이덴티티를 시각적으로 표현할 수 있습니다.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Photoshop</h4>
+                        <p>Photoshop을 통해 이미지를 보정하고 합성하여 시각적인 완성도를 높일 수 있습니다.
+                            배너, 썸네일, 웹 시안을 자유롭게 제작할 수 있습니다.
+                            사진과 그래픽을 조합해 감각적인 디자인을 완성할 수 있습니다.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Git / GitHub</h4>
+                        <p>Git과 GitHub를 통해 디자인 및 코드의 버전을 체계적으로 관리할 수 있습니다.
+                            작업 이력을 기록하고 복원하여 효율적인 협업이 가능합니다.
+                            팀 프로젝트에서 함께 작업하며 유지보수를 원활히 진행할 수 있습니다.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>React</h4>
+                        <p>React를 통해 컴포넌트 단위로 디자인을 구조화할 수 있습니다.
+                            Styled-components나 CSS 모듈을 활용해 각 요소별 스타일을 효율적으로 관리할 수 있습니다.
+                            디자인 변경 시에도 유지보수가 쉬운 구조적 스타일 시스템을 만들 수 있습니다.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="common-frame popup">
+            <h3 class="pf popup-title title-btn">POP UP</h3>
+            <p>Photoshop과 Illustrator를 활용해 시즌별 프로모션에 맞는 팝업 디자인을 제작했습니다.<br> 강조해야 할 메시지가 빠르게 전달되도록 컬러 대비와 타이포그래피 중심으로 구성했습니다.</p>
+
+            <div class="swiper popup-wrap">
+                <div class="swiper-wrapper popup-train">
+                    <div class="swiper-slide popup-list">
+                        <figure>
+                            <img src="./img/popup_blackfriday_1.jpg" alt="블랙프라이데이 팝업 - 블랙, 레드 대비 활용한 시즌 세일용 팝업">
+                        </figure>
+                        <h4>블랙프라이데이 팝업</h4>
+                        <p>강렬한 블랙과 레드 대비를 활용하여 시즌 세일의 임팩트를 극대화한 팝업입니다.중앙의 타이포그래피를 큼직하게 배치해 메시지 전달력을 높였고, 외곽에 그라디언트를 넣어 빛이 번지는 듯한 분위기를 연출했습니다.</p>
+                        <p>Tool: Illustrator</p>
+                    </div>
+                    <div class="swiper-slide popup-list">
+                        <figure>
+                            <img src="./img/popup_blackfriday_2.jpg" alt="블랙프라이데이 팝업 - 3D 버블 텍스트와 네온 핑크 라인 조화 활용한 세일 팝업">
+                        </figure>
+                        <h4>블랙프라이데이 팝업</h4>
+                        <p>부드러운 3D 버블 텍스트와 네온 핑크 라인을 조합해 트렌디하고 팝한 무드를 표현한 팝업입니다.
+                        ‘SALE’ 텍스트를 반복적으로 배치해 시각적 리듬을 만들고, 곡선 라인을 활용해 동적인 움직임을 느낄 수 있도록 디자인했습니다.</p>
+                        <p>Tool: Illustrator</p>
+                    </div>
+                    <div class="swiper-slide popup-list">
+                        <figure>
+                            <img src="./img/popup_christmas.jpg" alt="크리스마스 할인 팝업 - 크리스마스 요소들이 그래픽 아이콘으로 재해석된 따뜻한 느낌의 세일 팝업">
+                        </figure>
+                        <h4>크리스마스 할인 팝업</h4>
+                        <p>크리스마스 요소들을 그래픽 아이콘으로 재해석해 따뜻하고 즐거운 분위기를 담아낸 디자인입니다.
+                        선물 상자, 눈사람, 캔디케인 등의 오브젝트를 리듬감 있게 배치해 시각적인 즐거움을 주고, 메인 문구는 감성적인 손글씨체와 굵은 고딕체를 조합해 정보 전달력과 분위기를 동시에 잡았습니다.</p>
+                        <p>Tool: Illustrator</p>
+                    </div>
+                    <div class="swiper-slide popup-list">
+                        <figure>
+                            <img src="./img/popup_nike.jpg" alt="나이키 할인 팝업 - 제품사진을 중심요소로 배치한 가벼움과 에너지감이 느껴지는 할인 팝업">
+                        </figure>
+                        <h4>NIKE 할인 팝업</h4>
+                        <p>나이키 제품의 역동성을 강조하기 위해 블루 컬러와 제품 사진을 중심 요소로 배치한 팝업입니다. 제품이 배경 위로 떠 있는 듯한 구도로 구성해 가벼움과 에너지감을 표현했고, 할인 문구는 굵은 고딕체로 처리해 메시지가 강하게 각인되도록 했습니다.</p>
+                        <p>Tool: Photoshop</p>
+                    </div>
+                    <div class="swiper-slide popup-list">
+                        <figure>
+                            <img src="./img/popup_coupon.jpg" alt="쿠폰 이벤트 팝업 - 연한 블루 톤의 그라디언트 배경의 은은한 프리미엄 느낌의 이벤트 팝업">
+                        </figure>
+                        <h4>쿠폰 이벤트 팝업</h4>
+                        <p>연한 블루 톤의 그라디언트 배경을 사용해 깔끔하면서도 은은한 프리미엄 느낌을 담아낸 디자인입니다. 쿠폰 3종을 티켓 형태로 배열해 한눈에 혜택이 들어오도록 구성했고, 중앙의 퍼플 포인트 컬러를 통해 가장 높은 할인율을 직관적으로 강조했습니다.</p>
+                        <p>Tool: Photoshop</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var swiper = new Swiper(".popup-wrap", {
+                slidesPerView: 1.2,
+                spaceBetween: 14,
+                breakpoints: {
+                    640: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 14,
+                    },
+                    768: {
+                    slidesPerView: 2.2,
+                    spaceBetween: 18,
+                    },
+                    1024: {
+                    slidesPerView: 3.2,
+                    spaceBetween: 20,
+                    },
+                },
+            });
+        </script>
+
+
     </main>
     
 </body>
