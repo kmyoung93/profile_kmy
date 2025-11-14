@@ -107,10 +107,10 @@
 }
 
 .myExp {
-    /* background: url(../img/sky-bg.jpg) no-repeat 50% 50% / cover; */
-    background-color: #a3bcd5;
+    background: url(../img/sky-bg.jpg) no-repeat 50% 50% / cover;
+    /* background-color: #a3bcd5; */
     padding: 3rem 0;
-    color: #fff;
+    /* color: #fff; */
 }
 
 .exp-title{
