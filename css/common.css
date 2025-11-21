@@ -54,6 +54,7 @@ h4{
 html{
     font-size: var(--basic-font-pc);
     font-family: 'Pretendard', sans-serif;
+    scroll-behavior: smooth;
 }
 
 
@@ -69,13 +70,14 @@ em{
 
 .title-btn {
     border: 1px solid var(--main-color);
-    width: 284px;
+    min-width: 180px;
     border-radius: 20px;
     background-color: var(--main-color);
     color: #1e1e1e;
     margin: 3rem auto 1rem;
-    padding: .5rem 0;
+    padding: .5rem 1rem;
     text-align: center;
+    display: table;
 }
 
 
@@ -116,7 +118,7 @@ em{
     }
 
     .title-btn {
-        width: 180px;
+        min-width: 180px;
     }
     
 }

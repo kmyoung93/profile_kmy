@@ -22,18 +22,66 @@
     <link rel="icon" sizes="32x32" href="./img/profile-fabicon.png" type="image/png">
 
     <!-- interaction -->
-    <!-- <script src="./js/bbyong.js"></script>
+    <script src="./js/bbyong.js"></script>
     <link rel="stylesheet" href="./css/interaction.css">
-    <script src="./js/observer.js"></script> -->
+    <script src="./js/observer.js"></script>
 
     <!-- swiper.js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- js -->
+    <script src="./js/header.js"></script>  
 </head>
 <body>
-    <header></header>
+    <header>
+        <div class="common-frame">
+            <ul class="gnb">
+                <li><a href="#home">home</a></li>
+                <li><a href="#aboutme">about me</a></li>
+                <li><a href="#skill">skill</a></li>
+                <li><a href="#popups">popups</a></li>
+                <li><a href="#posters">posters</a></li>
+                <li><a href="#banners">banners</a></li>
+                <li>
+                    <a href="#project1">projects</a>
+                    <ul class="dep2">
+                        <li><a href="#project1">ESTEE LAUDER</a></li>
+                        <li><a href="#project2">BAKEE</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="./img/design_resume_kim_minyoung.jpg" target="_blank">resume</a></li>
+
+            </ul> 
+        </div>
+    </header>
+    <div class="btn-menu">
+        <img src="./img/paperplane.svg" alt="모바일 메뉴 버튼">
+    </div>
+    <div class="header-smart fadeout">
+            <ul class="gnb-smart">
+                <li class="pf"><a href="#home">home</a></li>
+                <li class="pf"><a href="#aboutme">about me</a></li>
+                <li class="pf"><a href="#skill">skill</a></li>
+                <li class="pf"><a href="#popups">popups</a></li>
+                <li class="pf"><a href="#posters">posters</a></li>
+                <li class="pf"><a href="#banners">banners</a></li>
+                <li class="pf">
+                    <a href="#project1">projects</a>
+                    <ul class="dep2">
+                        <li class="pf"><a href="#project1">ESTEE LAUDER</a></li>
+                        <li class="pf"><a href="#project2">BAKEE</a></li>
+                    </ul>
+                </li>
+                <li class="pf"><a href="#contact">contact</a></li>
+                <li class="pf"><a href="./img/design_resume_kim_minyoung.jpg" target="_blank">resume</a></li>
+            </ul> 
+        </div>
+    
+
     <main>
-        <div class="hero">
+        <div class="hero" id="home">
             <figure>
                 <video src="./img/herobanner_video.mp4" autoplay muted loop playsinline ></video>
             </figure>
@@ -44,7 +92,7 @@
             </div>    
         </div>
         
-        <div class="common-frame aboutMe">
+        <div class="common-frame aboutMe" id="aboutme">
             <div class="aboutMe-title">
                 <div class="non-tab">
                     <p>기본을 지키며 완성도를 쌓아가는 웹퍼블리셔, 김민영입니다.</p>
@@ -85,7 +133,7 @@
             </figure>
         </div>
 
-        <div class="myExp">
+        <div class="common-frame myExp">
             <h1 class="pf exp-title">About Me</h1>
             <p>경험을 통해 팀의 성장을 돕는 <br class="mo">퍼블리셔</p>
             <div class="common-frame exp-wrap">
@@ -150,7 +198,7 @@
             </div>
         </div>
 
-        <div class="skill">
+        <div class="common-frame skill" id="skill">
             <div class="common-frame">
                 <h3 class="pf skill-title title-btn">Skills & Language</h3>
                 <p>기본기를 바탕으로 꾸준히 성장하며 신뢰할 수 있는 퍼블리셔를 목표로 하고 있습니다.<br>체계적인 학습과 실무 중심의 자격 취득을 통해 웹 퍼블리싱의 기초 역량을 탄탄하게 다졌으며, 새로운 환경에서도 빠르게 적응하고 책임감 있게 업무를 수행합니다.</p>
@@ -222,7 +270,7 @@
             </div>
         </div>
 
-        <div class="common-frame popup">
+        <div class="common-frame popup" id="popups">
             <h3 class="pf popup-title title-btn">POP UP</h3>
             <p>Photoshop과 Illustrator를 활용해 시즌별 프로모션에 맞는 팝업 디자인을 제작했습니다.<br> 강조해야 할 메시지가 빠르게 전달되도록 컬러 대비와 타이포그래피 중심으로 구성했습니다.</p>
 
@@ -234,7 +282,7 @@
                         </figure>
                         <h4>블랙프라이데이 팝업</h4>
                         <p>강렬한 블랙과 레드 대비를 활용하여 시즌 세일의 임팩트를 극대화한 팝업입니다.중앙의 타이포그래피를 큼직하게 배치해 메시지 전달력을 높였고, 외곽에 그라디언트를 넣어 빛이 번지는 듯한 분위기를 연출했습니다.</p>
-                        <p>Tool: Illustrator</p>
+                        <p><strong>Tool</strong> Illustrator</p>
                     </div>
                     <div class="swiper-slide popup-list">
                         <figure>
@@ -243,7 +291,7 @@
                         <h4>블랙프라이데이 팝업</h4>
                         <p>부드러운 3D 버블 텍스트와 네온 핑크 라인을 조합해 트렌디하고 팝한 무드를 표현한 팝업입니다.
                         ‘SALE’ 텍스트를 반복적으로 배치해 시각적 리듬을 만들고, 곡선 라인을 활용해 동적인 움직임을 느낄 수 있도록 디자인했습니다.</p>
-                        <p>Tool: Illustrator</p>
+                        <p><strong>Tool</strong> Illustrator</p>
                     </div>
                     <div class="swiper-slide popup-list">
                         <figure>
@@ -252,7 +300,7 @@
                         <h4>크리스마스 할인 팝업</h4>
                         <p>크리스마스 요소들을 그래픽 아이콘으로 재해석해 따뜻하고 즐거운 분위기를 담아낸 디자인입니다.
                         선물 상자, 눈사람, 캔디케인 등의 오브젝트를 리듬감 있게 배치해 시각적인 즐거움을 주고, 메인 문구는 감성적인 손글씨체와 굵은 고딕체를 조합해 정보 전달력과 분위기를 동시에 잡았습니다.</p>
-                        <p>Tool: Illustrator</p>
+                        <p><strong>Tool</strong> Illustrator</p>
                     </div>
                     <div class="swiper-slide popup-list">
                         <figure>
@@ -260,7 +308,7 @@
                         </figure>
                         <h4>NIKE 할인 팝업</h4>
                         <p>나이키 제품의 역동성을 강조하기 위해 블루 컬러와 제품 사진을 중심 요소로 배치한 팝업입니다. 제품이 배경 위로 떠 있는 듯한 구도로 구성해 가벼움과 에너지감을 표현했고, 할인 문구는 굵은 고딕체로 처리해 메시지가 강하게 각인되도록 했습니다.</p>
-                        <p>Tool: Photoshop</p>
+                        <p><strong>Tool</strong> Photoshop</p>
                     </div>
                     <div class="swiper-slide popup-list">
                         <figure>
@@ -268,14 +316,14 @@
                         </figure>
                         <h4>쿠폰 이벤트 팝업</h4>
                         <p>연한 블루 톤의 그라디언트 배경을 사용해 깔끔하면서도 은은한 프리미엄 느낌을 담아낸 디자인입니다. 쿠폰 3종을 티켓 형태로 배열해 한눈에 혜택이 들어오도록 구성했고, 중앙의 퍼플 포인트 컬러를 통해 가장 높은 할인율을 직관적으로 강조했습니다.</p>
-                        <p>Tool: Photoshop</p>
+                        <p><strong>Tool</strong> Photoshop</p>
                     </div>
                 </div>
             </div>
         </div>
 
         <script>
-            var swiper = new Swiper(".popup-wrap", {
+            var swiper1 = new Swiper(".popup-wrap", {
                 slidesPerView: 1.2,
                 spaceBetween: 14,
                 breakpoints: {
@@ -294,6 +342,212 @@
                 },
             });
         </script>
+
+        <div class="common-frame poster" id="posters">
+            <h3 class="pf poster-title title-btn">POSTER</h3>
+            <p>Photoshop과 Illustrator를 활용해 다양한 콘셉트와 메시지를 시각적으로 표현한 포스터 디자인 작업입니다.<br>
+            텍스처 활용, 타이포그래피 변형, 콜라주 기법 등 여러 그래픽 요소를 조합해 주제에 맞는 분위기와 임팩트를 전달했습니다.</p>
+
+            <div class="swiper poster-wrap">
+                <div class="swiper-wrapper poster-train">
+                    <div class="swiper-slide poster-list">
+                        <figure>
+                            <img src="./img/poster_3.jpg" alt="Get fresh - 청귤 에이드 포스터">
+                        </figure>
+                        <h4>청귤 에이드 포스터</h4>
+                        <p>과일의 생생한 색감과 반복되는 ‘GET FRESH’ 타이포그래피를 조합해 시각적인 상쾌함을 극대화한 음료 프로모션 포스터입니다.<br>
+                        제품 사진을 중심에 배치해 상큼한 맛과 신선함이 바로 느껴지도록 구성했습니다.</p>
+                        <p><strong>Tool</strong> Photoshop</p>
+                    </div>
+                    <div class="swiper-slide poster-list">
+                        <figure>
+                            <img src="./img/poster_2.jpg" alt="Summer Music Festival 포스터">
+                        </figure>
+                        <h4>Summer Music Festival 포스터</h4>
+                        <p>청량한 하늘과 바다 풍경을 배경으로 사용해 여름 특유의 개방감과 에너지를 담아낸 페스티벌 포스터입니다.
+                        화이트 타이포그래피와 넓은 공간감을 활용해 자유롭고 밝은 분위기를 강조했습니다.</p>
+                        <p><strong>Tool</strong> Photoshop</p>
+                    </div>
+                    <div class="swiper-slide poster-list">
+                        <figure>
+                            <img src="./img/poster_1.jpg" alt="Save the Arctic 포스터">
+                        </figure>
+                        <h4>Save the Arctic 포스터</h4>
+                        <p>반쯤 잠긴 타이포그래피와 북극곰 이미지를 활용해 해빙 현상의 심각성을 표현한 환경 캠페인 포스터입니다.
+                        물 위·아래의 대비를 통해 점점 사라져가는 북극의 현실을 시각적으로 전달했습니다.</p>
+                        <p><strong>Tool</strong> Illustrator, Photoshop</p>
+                    </div>
+                    <div class="swiper-slide poster-list">
+                        <figure>
+                            <img src="./img/poster_4.jpg" alt="Save Earth - 녹아내리는 지구 포스터">
+                        </figure>
+                        <h4>Save Earth - 녹아내리는 지구 포스터</h4>
+                        <p>지구가 아이스크림처럼 녹아내리는 이미지를 콜라주해 기후 위기의 시급성을 표현한 메시지 포스터입니다.
+                        타이포그래피의 강약 대비를 통해 “행동하지 않으면 우리도 위험하다”는 경각심을 전달합니다.</p>
+                        <p><strong>Tool</strong> Photoshop</p>
+                    </div>
+                    <div class="swiper-slide poster-list">
+                        <figure>
+                            <img src="./img/poster_5.jpg" alt="Save Earth - 지구 엔벨롭 포스터">
+                        </figure>
+                        <h4>Save Earth - 지구 엔벨롭 포스터</h4>
+                        <p>지구 형태에 맞춰 왜곡된 타이포그래피로 환경 메시지를 재해석한 그래픽 포스터입니다.
+                        부드러운 톤의 색상과 유기적인 글자 형태로 지구 보호에 대한 긍정적인 이미지와 경고 메시지를 동시에 전달했습니다.</p>
+                        <p><strong>Tool</strong> Illustrator, Photoshop</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var swiper2 = new Swiper(".poster-wrap", {
+                slidesPerView: 1.2,
+                spaceBetween: 14,
+                breakpoints: {
+                    640: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 14,
+                    },
+                    768: {
+                    slidesPerView: 2.2,
+                    spaceBetween: 18,
+                    },
+                    1024: {
+                    slidesPerView: 3.2,
+                    spaceBetween: 20,
+                    },
+                },
+            });
+        </script>
+
+        <div class="common-frame banner" id="banners">
+            <h3 class="pf banner-title title-btn">BANNER</h3>
+            <p>Photoshop과 Illustrator를 활용해 시즌 프로모션에 맞춰 제작한 배너 디자인으로, 강한 대비와 대형 타이포그래피를 활용해 메시지 집중도를 높였습니다.<br> 각 브랜드의 무드에 맞는 컬러·구도·텍스처를 적용해 시각적 임팩트와 정보 전달력을 동시에 확보했습니다.</p>
+
+            <div class="swiper banner-wrap">
+                <div class="swiper-wrapper banner-train">
+                    <div class="swiper-slide banner-list">
+                        <figure>
+                            <img src="./img/banner_nike.jpg" alt="나이키 오프라인 매장 세일 프로모션 배너">
+                        </figure>
+                        <div class="banner-list-desc">
+                            <h4>나이키 오프라인 매장 세일 프로모션 배너</h4>
+                            <section class="banner-desc-p">
+                                <p>제품 사진을 타이포그래피와 자연스럽게 결합하여 브랜드 아이덴티티를 강조한 디자인입니다.<br>블루와 핑크 포인트 컬러로 에너지감을 살리고, 신발이 페이지 위를 가로지르는 듯한 역동적인 구도를 구현했습니다.</p>
+                                <p><strong>Tool</strong> Illustrator</p>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="swiper-slide banner-list">
+                        <figure>
+                            <img src="./img/banner_nike2.jpg" alt="나이키 오프라인 매장 세일 프로모션 배너">
+                        </figure>
+                        <div class="banner-list-desc">
+                            <h4>나이키 오프라인 매장 세일 프로모션 배너</h4>
+                            <section class="banner-desc-p">
+                                <p>블랙 배경 위에 나이키 로고와 제품을 중심으로 배치하여 브랜드 존재감을 극대화한 배너입니다.<br>화이트·블루 조합으로 깔끔한 분위기를 유지하면서도 할인 메시지가 명확하게 전달되도록 구성했습니다.</p>
+                                <p><strong>Tool</strong> Photoshop</p>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="swiper-slide banner-list">
+                        <figure>
+                            <img src="./img/banner_blackfriday_2.jpg" alt="블랙프라이데이 세일 배너">
+                        </figure>
+                        <div class="banner-list-desc">
+                            <h4>블랙프라이데이 세일 배너</h4>
+                            <section class="banner-desc-p">
+                                <p>종이가 찢어진 듯한 질감 위로 블랙·레드 타이포를 배치해 시선을 끄는 구조로 설계한 디자인입니다.<br>부드러운 질감과 강렬한 프로모션 메시지를 조합해 세련된 블랙프라이데이 무드를 연출했습니다.</p>
+                                <p><strong>Tool</strong> Illustrator</p>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="swiper-slide banner-list">
+                        <figure>
+                            <img src="./img/banner_blackfriday_1.jpg" alt="블랙프라이데이 세일 배너">
+                        </figure>
+                        <div class="banner-list-desc">
+                            <h4>블랙프라이데이 세일 배너</h4>
+                            <section class="banner-desc-p">
+                                <p>강한 블랙 대비와 대형 볼드 타이포그래피를 사용해 블랙프라이데이의 강렬한 분위기를 표현한 배너입니다.<br>라인 타입 텍스트를 반복 배치해 리듬감을 주고, 할인 메시지가 가장 먼저 눈에 들어오도록 구성했습니다.</p>
+                                <p><strong>Tool</strong> Illustrator</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var swiper3 = new Swiper(".banner-wrap", {
+                slidesPerView: 1,
+                spaceBetween: 14,
+                breakpoints: {
+                    640: {
+                    slidesPerView: 1,
+                    spaceBetween: 14,
+                    },
+                    768: {
+                    slidesPerView: 1,
+                    spaceBetween: 18,
+                    },
+                    1024: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                    },
+                },
+                autoHeight:true,
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false,
+                },
+                loop: true,
+                speed: 12000,
+            });
+        </script>
+
+        <div class="project">
+            <div class="common-frame" id="project1">
+                <h3 class="pf title-btn">Team Project - ESTEE LAUDER</h3>
+                <p>
+                    기획부터 와이어프레임, 시안 디자인, 프로토타입까지 전 과정을 직접 수행하였습니다.<br> 반응형 웹디자인을 적용하여 다양한 디바이스에서의 접근성을 높이고<br> 직관적인 UI를 통해 브랜드의 정체성을 효과적으로 만들고자 노력했습니다. 
+                </p>
+            </div>
+            <section class="project-frame">
+                <ul class="common-frame project-sticky-menu-est">
+                    <li><a href="#" target="_blank">New Branding</a></li>
+                    <li><a href="#" target="_blank">Figma Prototype</a></li>
+                </ul>
+                <figure class="project-img">
+                    <!-- 상세 이미지 -->
+                     <picture>
+                        <source media="(max-width:768px)" srcset="./img/esteelauder-detail-mo.jpg">
+                        <img src="./img/esteelauder-detail-pc.jpg" alt="Estee Lauder프로젝트 상세페이지 이미지">
+                     </picture>
+                </figure>
+            </section>
+        </div>
+
+        <div class="common-frame" id="project2">
+                <h3 class="pf title-btn">Rebranding Project - BAKEE</h3>
+                <p>
+                    기획부터 와이어프레임, 시안 디자인, 프로토타입까지 전 과정을 직접 수행하였습니다.<br> 반응형 웹디자인을 적용하여 다양한 디바이스에서의 접근성을 높이고<br> 직관적인 UI를 통해 브랜드의 정체성을 효과적으로 만들고자 노력했습니다. 
+                </p>
+            </div>
+            <section class="project-frame">
+                <ul class="common-frame project-sticky-menu-bakee">
+                    <li><a href="#" target="_blank">New Branding</a></li>
+                    <li><a href="#" target="_blank">Figma Prototype</a></li>
+                </ul>
+                <figure class="project-img">
+                    <!-- 상세 이미지 -->
+                     <picture>
+                        <source media="(max-width:768px)" srcset="./img/bakee-detail-mo.jpg">
+                        <img src="./img/bakee-detail-pc.jpg" alt="Bakee 프로젝트 상세페이지 이미지">
+                     </picture>
+                </figure>
+            </section>
+        </div>
 
 
     </main>

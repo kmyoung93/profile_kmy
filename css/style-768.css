@@ -15,7 +15,7 @@
 
     .subtitle {
         margin-top: 3rem;
-        font-size: 4.5vw;
+        font-size: 1.8rem;
     }
 
     .title{
@@ -43,7 +43,7 @@
         text-align: left;
     }
 
-    figure{
+    .aboutMe figure{
         width: 100%;
         margin-top: 1rem;
     }
@@ -62,7 +62,17 @@
     }
 
     .exp-list li {
-        grid-template-columns: 80px 1fr;
+        grid-template-columns: 1fr;
+        margin-bottom: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    .banner-list-desc{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
     }
 }
 
