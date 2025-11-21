@@ -471,3 +471,41 @@ header.fadeout{
 .header-smart{
     display: none;
 }
+
+.contact {
+    background: url(../img/sky-bg.jpg) no-repeat 50% 50% / cover;
+    color: #000;
+    padding: 6rem 0 6rem;
+    text-align: center;
+    margin-top: 6rem;
+    border-radius: 100px 100px 0 0;
+}
+.ct1{
+    margin-bottom: 2rem;
+}
+.contact h2{
+    font-size:5rem;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.ct2{
+    font-size: 1rem;
+    margin-bottom: 4rem;
+}
+.contact h4{
+    margin-bottom: 1rem;
+}
+.contact-menu{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.contact-menu a {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    /* border: 1px solid rgba(255, 255, 255, 0.512); */
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.512);
+    border-radius: 10px;
+}
