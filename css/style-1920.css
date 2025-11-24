@@ -362,6 +362,7 @@
     border-radius: 1rem;
     background-color: #001774;
     color: #fff;
+    font-size: 0.8rem;
 }
 
 .project-sticky-menu-est a:hover {
@@ -379,12 +380,13 @@
 
 }
 
-.project-sticky-menu-bakee a{
+.project-sticky-menu-bakee a {
     display: block;
     background-color: #A05913;
     padding: .5rem 1.5rem;
     border-radius: 1rem;
     color: #fff;
+    font-size: 0.8rem;
 }
 
 .project-sticky-menu-bakee a:hover{
@@ -489,6 +491,7 @@ header.fadeout{
     text-align: center;
     margin-top: 6rem;
     border-radius: 100px 100px 0 0;
+    background-attachment: fixed;
 }
 .ct1{
     margin-bottom: 2rem;
